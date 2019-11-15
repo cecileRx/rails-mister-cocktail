@@ -5,11 +5,11 @@
       <ul>
         <% @doses.each do |dose|  %>
         <li> <%= dose.description%>  <%= dose.ingredient.name %></li>
+        <p> <%= link_to 'remove a dose', dose_path(dose), method: :delete %></p>
         <% end %>
       </ul>
+
       <p> <%= link_to 'add an ingredient', new_cocktail_dose_path(@cocktail) %></p>
-      <p> <%= link_to 'remove a dose', delete_path(@doses), method: :delete,
-     data: { confirm: 'Are you you want to delete ${dose} ?'}%></p>
     </div>
   </div>
 </div>
