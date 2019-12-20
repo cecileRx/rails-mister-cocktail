@@ -8,6 +8,8 @@
         <p> <%= link_to 'remove a dose', dose_path(dose), method: :delete %></p>
         <% end %>
       </ul>
+      <%= cl_image_tag("tpdvctp9g3jenj6lheqt",
+      width: 400, height: 300, crop: :fill) %>
 
       <p> <%= link_to 'add an ingredient', new_cocktail_dose_path(@cocktail) %></p>
     </div>

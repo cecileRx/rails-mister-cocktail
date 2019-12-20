@@ -1,0 +1,33 @@
+.banner_new {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('thao-le-hoang-WRfgYQWezh8-unsplash.jpg');
+  background-position: center;
+  height: 800px;
+  text-align: center;
+  color:  #98811d;
+  font-family: 'Girassol', cursive;
+  // font-family: 'Caveat', cursive;
+}
+
+.banner_new h1 {
+  font-family: 'Girassol', cursive;
+  margin-top: 35px;
+}
+// .field {
+//   background-color: #98811d;
+//   border-radius: 50%;
+
+// }
+
+.field-space {
+  background-color: #98811d;
+  border-radius: 20%;
+  text-align: center;
+  margin-top: 20px;
+}
+.actions .actions-btn{
+   background-color: black;
+   color: #98811d;
+   // border-radius: 50%;
+   // padding: 10px 10px;
+}

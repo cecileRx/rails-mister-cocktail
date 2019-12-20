@@ -1,11 +1,23 @@
-<div class="container">
+
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1>Create a new cocktail</h1>
-      <%= simple_form_for @cocktail do |f| %>
-        <%= f.input :name%>
-        <%= f.submit class: 'btn btn-primary' %>
-      <% end %>
+    <div class="banner_new col-12">
+
+
+        <h1>Say a word and The barman will invent a name for your cocktail</h1>
+        <%= form_for (@cocktail) do |f| %>
+          <div class="form-style col-12">
+             <div class="field">
+                <%= f.text_field :name, placeholder: "Your word", class: 'field-space' %>
+            </div>
+            <% f.label :photo, as: :file  %>
+     <!--        <div class="actions">
+                <% f.submit "Go Bro!", class: 'actions-btn .rounded-cirlce'%>
+            </div> -->
+          </div>
+        <% end %>
+
     </div>
   </div>
-</div>
+
+
+
