@@ -1,10 +1,19 @@
+
+require 'faker'
+
 class CocktailsController < ApplicationController
 
   def index
     @cocktails = Cocktail.all
   end
 
+  def fakename
+    @fakename = Faker::Superhero.name
+
+  end
+
   def show
+    fakename
     @cocktail = Cocktail.find(params[:id])
     @doses = @cocktail.doses
   end

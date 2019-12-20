@@ -1,17 +1,17 @@
-<div class="container">
+
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1><%= @cocktail.name %></h1>
+    <div class="col-12 show-style">
+      <h1><%= " #{@cocktail.name.capitalize} #{@fakename}" %></h1>
       <ul>
         <% @doses.each do |dose|  %>
         <li> <%= dose.description%>  <%= dose.ingredient.name %></li>
         <p> <%= link_to 'remove a dose', dose_path(dose), method: :delete %></p>
         <% end %>
       </ul>
-      <%= cl_image_tag("tpdvctp9g3jenj6lheqt",
-      width: 400, height: 300, crop: :fill) %>
+      <%= cl_image_tag("https://images.unsplash.com/photo-1562708294-4df93280352d?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ram-ho-l5ooCJlUgvU-unsplash.jpg",
+      style: "max-height: 500px", class: "drink") %>
 
-      <p> <%= link_to 'add an ingredient', new_cocktail_dose_path(@cocktail) %></p>
+      <p> <%= link_to 'add an ingredient', new_cocktail_dose_path(@cocktail), class: "ingredient"%></p>
     </div>
   </div>
-</div>
+
