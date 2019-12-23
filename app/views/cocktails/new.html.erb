@@ -1,13 +1,17 @@
 
+
+
   <div class="row">
     <div class="banner_new col-12">
-
-
-        <h1>Say a word and The barman will invent a name for your cocktail</h1>
+            <audio preload="auto" >
+              <source src="/Users/rougnaux/code/cecileRx/rails-mister-cocktail/app/assets/sound/nina-simone-my-baby-just-cares-for-me.mp3"></source>
+            </audio>
+        <h1 class="go-sound">Say a word and The barman will invent a name for your cocktail</h1>
         <%= form_for (@cocktail) do |f| %>
           <div class="form-style col-12">
-             <div class="field">
-                <%= f.text_field :name, placeholder: "Your word", class: 'field-space' %>
+
+             <div id = "musicHolder" class="field">
+                <%= f.text_field :name, placeholder: "what's your lucky word?", class: 'field-space' %>
             </div>
             <% f.label :photo, as: :file  %>
      <!--        <div class="actions">
@@ -18,6 +22,5 @@
 
     </div>
   </div>
-
 
 
