@@ -16,3 +16,11 @@
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 console.log('Hello World from Webpacker')
+
+
+$(function(){
+$('#musicHolder').hover(
+    function() {    $("audio")[0].play();},
+    function() {    $("audio")[0].pause();}
+    )
+});
