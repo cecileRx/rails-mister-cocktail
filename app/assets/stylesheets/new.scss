@@ -5,12 +5,12 @@
   height: 800px;
   text-align: center;
   color:  #98811d;
-  font-family: 'Girassol', cursive;
+  font-family: 'Raleway', sans-serif;
   // font-family: 'Caveat', cursive;
 }
 
 .banner_new h1 {
-  font-family: 'Girassol', cursive;
+  font-family: 'Raleway', sans-serif;
   margin-top: 35px;
 }
 // .field {
@@ -24,8 +24,14 @@
   border-radius: 20%;
   text-align: center;
   margin-top: 20px;
-  padding: 5px;
+  padding: 15px;
 }
+
+::placeholder {
+    color: black;
+    padding: 10px;
+}
+
 .actions .actions-btn{
    background-color: black;
    color: #98811d;
