@@ -1,8 +1,8 @@
 
 <div class="main-container pt-5">
   <div class="titles">
-    <h2> Let's create your </h2>
-    <h1><%= @cocktail.name %></h1>
+    <h2> Let's create your cocktail </h2>
+
   </div>
   <div class="show-style">
     <div class="receipe">
@@ -18,7 +18,7 @@
        <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
   </div>
-  <div class="result">
-    <p><%= link_to "Ready to try your #{@cocktail.name}", cocktail_drink_path(@cocktail) %></p>
+  <div class="cocktail-result">
+    <p><%= link_to "Ready to see your creation?", cocktail_drink_path(@cocktail) %></p>
   </div>
 </div>
