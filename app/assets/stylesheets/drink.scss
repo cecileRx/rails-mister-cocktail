@@ -1,0 +1,18 @@
+
+.main-drink {
+  background-color: black;
+}
+
+.drink-page {
+  background-size: cover;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('drink.jpg') no-repeat center;
+  background-position: center;
+  height: 900px;
+  text-align: center;
+  color:  #98811d;
+
+  h1 {
+    padding-top: 80px;
+    position: static;
+  }
+}

@@ -1,0 +1,6 @@
+<h3>how does it taste?</h3>
+<%= simple_form_for [cocktail, dose] do |f| %>
+  <%= f.association :ingredient, :label => "ingredients" %>
+  <%= f.input :description, :label => "How much?" %>
+  <%= f.button :submit, 'Add to shaker!', class: "btn btn-primary" %>
+<% end %>
